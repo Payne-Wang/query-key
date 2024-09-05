@@ -370,11 +370,11 @@
     <form id="apiForm">
             <textarea id="api_info" name="api_info"
                       placeholder="懒人专用文本框，支持同时粘贴接口地址和密钥，智能提取，如：https://api.openai.com，sk-TodayIsThursdayVme50ForKFC"></textarea>
-        <input type="text" id="api_url" name="api_url" placeholder="接口地址，如：https://api.openai.com" value="">
+        <input type="text" id="api_url" name="api_url" value="https://api.openai.com">
         <input type="text" id="api_key" name="api_key" placeholder="密钥，如：sk-TodayIsThursdayVme50ForKFC" value="">
         <div class="model-input-container" id="model-input-container">
             <textarea type="text" id="model_name" name="model_name"
-                      placeholder="支持手动填入测试模型名称，用英文逗号分隔多个模型"></textarea>
+                      placeholder="支持手动填入测试模型名称，用英文逗号分隔多个模型" value="gpt-4o,gpt-4o-mini,gpt-3.5-turbo"></textarea>
             <input type="button" value="获取模型列表" style="height: 50px" onclick="getModelList()">
         </div>
         <div id="modelCheckboxes"></div>
